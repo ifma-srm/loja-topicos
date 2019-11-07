@@ -1,0 +1,72 @@
+<html>
+<head>
+	<title>Carrinho de Compras</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+	<style type="text/css">
+		body{
+			background-color: gray;
+		}
+	</style>
+</head>
+<body>
+
+	<h1 align="center"><img align="width:50" height="50" src="Photos/Snapshot_6.png">Carrinho<img align="width:50" height="50" src="Photos/Snapshot_6.png"></h1>
+
+	<br>
+	
+	<h2><i>Total a pagar:</i> <button onclick="Pagar()" class="btn btn-success">R$ 3.790,00</button> </h2>
+
+	<br>
+<table>
+	<tr>
+		<td>
+		<p><img align="left" width="200" height="240" src="Photos/Produtos/KitGamer/pc cópia.png"></p>	
+		</td>
+	</tr>
+<tr>
+	<td>
+	<h2>Processador i3:7100 + GTX 1050 2GB + 4G <br>de Ram + 2 Fans + B360 (Placa Mãe) <br> + fonte 500W</h2>	
+	</td>
+</tr>
+
+</table>
+
+<br>
+<br>
+<br>
+<br>
+	<h2>Clique <a href="AlfaGames.html">AQUI</a> para voltar ao <a href="AlfaGames.html">INICIO</a></h2>
+
+	<script type="text/javascript">
+		function Pagar() {
+
+			var x;
+		var r=confirm("Vai pagar com boleto?");
+		if (r==true)
+ 		 {
+ 		 x="Sim eu vou :)";
+ 		 }
+		else
+ 		 {
+ 		 x="Não, deixa pra lá :(";
+ 		 }
+		 x=alert (x);
+
+		}
+		function titulo(){
+			var h1 = document.getElementsByTagName("h1");
+			h1[0].style.color = "white";
+			h1[0].style.backgroundColor = "black";
+			h1[0].style.textDecoration = "underline";
+			
+			var link = document.getElementsByTagName("a");
+			link[0].style.color = "red";
+			link[1].style.color = "red";
+			link[2].style.color = "red";
+			link[3].style.color = "red";
+
+		}
+		titulo();
+	</script>
+</body>
+</html>
