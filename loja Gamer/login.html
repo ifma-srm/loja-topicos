@@ -1,0 +1,106 @@
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    
+    <title>ALFA GAMES</title>
+    
+    <link rel="stylesheet" href="CSS/css.css">
+    
+    <link rel="stylesheet" href="CSS/material.min.css" />
+    
+    <script defer src="JS/material.min.js"></script>
+    <script src="JS/material.min.js"></script>
+    <style type="text/css">
+  
+    img{ width: 840px;
+      height: 600px;
+      position:absolute;
+      top:5%;left:17%;
+      opacity: 0.6;}
+    #texto {
+      position: absolute;
+      text-align: center;
+      margin-left: 310px;
+      color: black;
+    </style>
+  </head>
+
+  <body>
+
+  <div class="mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        
+        <span class="mdl-layout-title">ALFA GAMES</span>
+       
+        <div class="mdl-layout-spacer"></div>
+       
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="index.html">INICIO</a>
+          <a class="mdl-navigation__link" href="">CARRINHO</a>
+          <a class="mdl-navigation__link" href="login.html">LOGIN</a>
+
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer" id="menu">
+      <span class="mdl-layout-title">MENU</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="index.html">KIT GAMER</a>
+        <a class="mdl-navigation__link" href="">CRIADORES DO SITE</a>
+      </nav>
+    </div>
+
+    <div>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="page-content">
+          <img src="img/foto.jpg" align="center"><br>
+            </div>
+              <div id="texto">
+                <h2 id="welcome" align="center">Bem-vindo(a)! Entre no sistema</h2>
+
+                  <div class="mdl-grid">
+
+                    <div id="login" class="mdl-cell mdl-cell--6-col mdl-cell--3-offset">
+                      
+                      <form action="index.html" id="form-login" method="post">
+
+                        <h3 class="mdl-layout-title">Informe os dados abaixo para entrar no sistema</h3>
+
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" name="email" type="text" id="log">
+                          <label class="mdl-textfield__label" for="log">Nome de Usuário (E-mail ou ID)</label>
+                        </div>
+                        <br />
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" name="senha" type="password" id="pass">
+                          <label class="mdl-textfield__label" for="pass">Informe a sua senha</label>
+                        </div>
+                        <br />
+
+                        <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                          Entrar
+                        </button>
+
+                       <button type="reset" class="mdl-button mdl-js-button mdl-button--raised mdl-button--raised">
+                          Cancelar
+                        </button>
+                        </form>
+                        
+                        <form action="cadastro.html" id="form-login" method="post">
+
+                        <h3 class="mdl-layout-title">Não está cadastrado ?</h3>
+                        <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                          Cadastre-se
+                        </button>
+                        
+                        </div>
+                    </form>
+              </div>
+        </main>
+     </div>
+    </main>
+  </div>
+  </body>
+  </html>
