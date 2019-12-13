@@ -15,12 +15,12 @@
     img{ width: 840px;
       height: 600px;
       position:absolute;
-      top:5%;left:25%;
-      opacity: 0.6;}
+      top:5%;left:17%;
+      opacity: 0.4;}
     #texto {
       position: absolute;
       text-align: center;
-      margin-left: 490px;
+      margin-left: 310px;
       color: black;
     </style>
   </head>
@@ -55,7 +55,7 @@
     </div>
     <main class="mdl-layout__content">
         <div class="page-content">
-          <img src="img/foto.jpg" align="center"><br>
+          <img src="IMG/foto.jpg" align="center"><br>
             </div>
               <div id="texto">
                 <h2 id="welcome" align="center">Bem-vindo(a)! Entre no sistema</h2>
@@ -69,12 +69,12 @@
                         <h3 class="mdl-layout-title">Informe os dados abaixo para entrar no sistema</h3>
 
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                          <input class="mdl-textfield__input" name="email" type="text" id="log">
+                          <input class="mdl-textfield__input" name="email" type="text" id="log" placeholder="exemplo@hotmail.com">
                           <label class="mdl-textfield__label" for="log">Nome de Usuário (E-mail ou ID)</label>
                         </div>
                         <br />
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                          <input class="mdl-textfield__input" name="senha" type="password" id="pass">
+                          <input class="mdl-textfield__input" name="senha" type="password" id="pass" placeholder="">
                           <label class="mdl-textfield__label" for="pass">Informe a sua senha</label>
                         </div>
                         <br />
@@ -83,7 +83,9 @@
                           Entrar
                         </button>
 
-                       <input type="button" value="Cancelar" class="mdl-button mdl-js-button mdl-button--raised mdl-button--raised">
+                       <button type="reset" class="mdl-button mdl-js-button mdl-button--raised mdl-button--raised">
+                          Cancelar
+                        </button>
                         </form>
                         
                         <form action="cadastro.html" id="form-login" method="post">

@@ -15,20 +15,12 @@
     img{ width: 840px;
       height: 600px;
       position:absolute;
-<<<<<<< HEAD
-      top:5%;left:24%;
-=======
-      top:5%;left:25%;
->>>>>>> 2c5e812cdef73bdc38fa49828b51000e634446d3
-      opacity: 0.6;}
+      top:5%;left:17%;
+      opacity: 0.1;}
     #texto {
       position: absolute;
       text-align: center;
-<<<<<<< HEAD
-      margin-left: 350px;
-=======
-      margin-left: 490px;
->>>>>>> 2c5e812cdef73bdc38fa49828b51000e634446d3
+      margin-left: 250px;
       color: black;
     </style>
   </head>
@@ -63,7 +55,7 @@
     </div>
     <main class="mdl-layout__content">
         <div class="page-content">
-          <img src="img/foto.jpg" align="center"><br>
+          <img src="IMG/foto.jpg" align="center"><br>
             </div>
               <div id="texto">
                 <h2 id="welcome" align="center">Bem-vindo(a)! Cadastre-se no sistema</h2>
@@ -72,30 +64,62 @@
 
                     <div id="login" class="mdl-cell mdl-cell--6-col mdl-cell--3-offset">
                       
-                      <center><form action="index.html" id="form-login" method="post">
+                      <form action="index.html" id="form-login" method="post">
 
                         <h3 class="mdl-layout-title">Informe os dados abaixo para concluir o cadastro</h3>
 
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                          <input class="mdl-textfield__input" name="email" type="text" id="log">
+                          <input class="mdl-textfield__input" name="email" type="text" id="log" placeholder="exemplo@hotmail.com">
                           <label class="mdl-textfield__label" for="log">Nome de Usuário (E-mail ou ID)</label>
                         </div>
                         <br />
+
+                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" name="data" type="text" id="log" placeholder="Paulo">
+                          <label class="mdl-textfield__label" for="log">Nome Completo</label>
+                        </div>
+                        <br/>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                          <input class="mdl-textfield__input" name="senha" type="password" id="pass">
+                          <input class="mdl-textfield__input" name="senha" type="password" id="pass"placeholder="">
                           <label class="mdl-textfield__label" for="pass">Senha</label>
                         </div>
+
                         <br />
+
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" name="data" type="date" id="log" placeholder="00/00/0000">
+                          <label class="mdl-textfield__label" for="log">Data de Nascimento</label>
+                        </div>
+
+                        <br/>
+
+                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" name="Cidade" type="text" id="log"placeholder="Balsas">
+                          <label class="mdl-textfield__label" for="log">Cidade</label>
+                        </div>
+                        <br/>
+
+                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" name="Estado" type="text" id="log" placeholder="Maranhão">
+                          <label class="mdl-textfield__label" for="log">Estado</label>
+                        </div>
+                        <br/>
+
+                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" name="CEP" type="text" id="log" placeholder="000000-000" maxlength="8">
+                          <label class="mdl-textfield__label" for="log">CEP</label>
+                        </div>
+
+
 
                         <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
                           Cadastrar
                         </button>
 
                        <button type="reset" class="mdl-button mdl-js-button mdl-button--raised mdl-button--raised">
-                         <a href="login.html">Cancelar</a>
+                          Cancelar
                         </button>
-
-            </form></center>
+            </form>
           </div>
        </main>
      </div>

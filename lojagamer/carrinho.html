@@ -9,7 +9,17 @@
     <link rel="stylesheet" href="CSS/material.min.css" />
   	
     <script defer src="JS/material.min.js">
- 
+   
+    function AddCarrinho(produto, qtd, valor, posicao)
+     { 
+     localStorage.setItem("produto" + posicao, produto);
+     localStorage.setItem("qtd" + posicao, qtd);
+     valor = valor * qtd;
+     localStorage.setItem("valor" + posicao, valor);
+     alert("Produto adicionado ao carrinho!");
+     }
+
+
     </script>
 
     <style type="text/css">
@@ -17,12 +27,12 @@
       img{ width: 840px;
       height: 600px;
       position:absolute;
-      top:5%;left:25%;
+      top:5%;left:17%;
       opacity: 0.6;}
     #texto {
       position: absolute;
       text-align: center;
-      margin-left: 490px;
+      margin-left: 310px;
       color: black;
     </style>
     </style>
@@ -39,7 +49,7 @@
        
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="index.html">INICIO</a>
-          <a class="mdl-navigation__link" href="">CARRINHO</a>
+          <a class="mdl-navigation__link" href="carrinho.html">CARRINHO</a>
           <a class="mdl-navigation__link" href="login.html">LOGIN</a>
         </nav>
       </div>
@@ -56,9 +66,11 @@
     </div>
     <main class="mdl-layout__content">
       <div class="page-content">
-      <img src="img/foto.jpg" align="center"><br>
+      <img src="IMG/foto.jpg" align="center"><br>
       </div>
-      <div id="texto"></div>
+      <div id="texto">
+     
+      </div>
     </main>
   </div>
     </main>
